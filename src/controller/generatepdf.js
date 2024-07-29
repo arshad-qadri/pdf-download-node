@@ -12,6 +12,7 @@ exports.generatePdf = async (req, res) => {
   `;
 
   try {
+    console.log(puppeteer.executablePath());
     // Launch Puppeteer with necessary arguments
     const browser = await puppeteer.launch({
       headless: true,
