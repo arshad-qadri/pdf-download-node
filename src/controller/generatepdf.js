@@ -23,7 +23,7 @@ exports.generatePdf = async (req, res) => {
     const page = await browser.newPage();
 
     // Set the HTML content
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+    await page.setContent(htmlContent, { waitUntil: 'networkidle2' });
 
     // Generate PDF
     const pdfBuffer = await page.pdf({ format: 'A4' });
