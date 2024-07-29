@@ -40,7 +40,7 @@ app.post('/generate-pdf', async (req, res) => {
     res.status(500).send('Error generating PDF.');
   }
 });
-app.get("/test",  async (req, res) => {
+app.get("/",  async (req, res) => {
   res.json({message:"Hello world!"})
 })
 
