@@ -7,7 +7,7 @@ const port = 5000;
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.use(cors());
-app.use("/" , router)
+app.use("/api" , router)
 
 app.get("/",  async (req, res) => {
   res.json({message:"Hello world!"})
